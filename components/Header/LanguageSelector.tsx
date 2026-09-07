@@ -40,18 +40,18 @@ const LanguageSelector = ({ globalPageProps, languages }: Props) => {
             setIsOpen(false);
           }, 100)
         }
-        className="ml-4 w-40 inline-flex items-center overflow-hidden rounded-md bg-white transition duration-100 hover:bg-gray-200 active:scale-95 active:bg-gray-300 text-center"
+        className="inline-flex items-center overflow-hidden rounded-md bg-white transition duration-100 hover:bg-gray-200 active:scale-95 active:bg-gray-300 text-center"
       >
         <button
           type="button"
-          className="inline-flex cursor-pointer items-center justify-center rounded-lg px-4 py-2 text-sm font-medium text-gray-800 w-full"
+          className="inline-flex cursor-pointer items-center justify-center whitespace-nowrap rounded-lg px-3 py-2 text-sm font-medium text-black"
         >
           {localeToLanguageName(currentLocale)}
         </button>
       </div>
 
       <div
-        className={`absolute w-40 end-0 z-10 ml-4 mt-1 rounded-md border border-gray-100 bg-white shadow-lg${
+        className={`absolute end-0 z-10 mt-1 w-40 rounded-md border border-border bg-white shadow-lg${
           isOpen ? '' : ' hidden'
         }`}
         role="menu"
