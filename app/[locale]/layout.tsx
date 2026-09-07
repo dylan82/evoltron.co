@@ -39,9 +39,9 @@ export default async function RootLayout({ children, params }: Params) {
   return (
     <>
       <CustomColor
-        r={data.layout?.mainColor.red || 74}
-        g={data.layout?.mainColor.green || 247}
-        b={data.layout?.mainColor.blue || 108}
+        r={data.layout?.mainColor.red || 10}
+        g={data.layout?.mainColor.green || 37}
+        b={data.layout?.mainColor.blue || 64}
       />
       {isDraft && <ContentLink />}
       {children}
